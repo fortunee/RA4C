@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'pm-app',
+  selector: 'classification',
   template: `
   <div>
     <h1>{{pageTitle}}</h1>
@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
   </div>
   `
 })
-export class AppComponent {
-  pageTitle: string = `Acme Product Management`;
+export class ClassificationComponent {
+  pageTitle: string = `Classification Component`;
 }

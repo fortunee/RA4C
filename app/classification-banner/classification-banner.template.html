@@ -1,7 +1,33 @@
 <div class="container">
     <h2>{{pageTitle}}</h2>
-    <h2>{{acmObject}}</h2>
-    <h2>{{canSetLevel}}</h2>
-    <h2>{{environment}}</h2>
-    <button class="btn btn-primary" (click)="onLevelChanged()">click</button>
+    <p>{{acmObject}}</p>
+    <p>{{canSetLevel}}</p>
+    <p>{{environment}}</p>
+    <p>{{position}}</p>
+    <button class="btn btn-primary" (click)="onClick()">click</button>
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Version</th>
+                    <th>classif</th>
+                    <th>owner_prod</th>
+                    <th>atom_energy</th>
+                    <th>sar_id</th>
+                    <th>sci_ctrls</th>
+                    <th>disponly_to</th>
+                    <th>dissem_ctrls</th>
+                    <th>non_ic</th>
+                    <th>rel_to</th>
+                    <th>declass_ex</th>
+                    <th>fgi_open</th>
+                    <th>fgi_protect</th>
+                    <th>portion</th>
+                    <th>banner</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
 </div>

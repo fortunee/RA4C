@@ -11,12 +11,13 @@ export class ClassificationBannerComponent {
     @Input() acmObject: any;
     @Input() canSetLevel: boolean;
     @Input() environment: string = 'dev'; // Set dev by default
+    @Input() position: string;
 
     constructor() {
         
     }
 
-    onLevelChanged(): void {
+    onClick(): void {
         // Something needs to happen
         console.log(this.acmObject);
         console.log(this.canSetLevel);

@@ -4,11 +4,8 @@ import { Component } from '@angular/core';
   selector: 'classification',
   template: `
   <div>
-    <h1>{{pageTitle}}</h1>
-    <div>My First Component</div>
+    <nb-classification-banner></nb-classification-banner>
   </div>
   `
 })
-export class ClassificationComponent {
-  pageTitle: string = `Classification Component`;
-}
+export class ClassificationComponent {}

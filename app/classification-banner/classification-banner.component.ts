@@ -11,6 +11,7 @@ export class ClassificationBannerComponent implements OnChanges {
     @Input() acmObject: any;
     @Input() canSetLevel: boolean;
     @Input() environment: string = 'dev'; // Set dev by default
+    @Input() onLevelChanged: string;
     @Input() position: string;
     backgroundColor: string = 'black';
 
@@ -22,7 +23,7 @@ export class ClassificationBannerComponent implements OnChanges {
         if(this.acmObject.classif === 'U') {
             this.backgroundColor = 'green';
         } else if (this.acmObject.classif === 'TS') {
-            this.backgroundColor = 'yellow'
+            this.backgroundColor = 'yellow';
         }
     }
 

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
         [acmObject]="acmObject"
         [canSetLevel]="canSetLevel"
         [environment]="environment"
+        [onLevelChanged]="onLevelChanged"
         [position]="position"
         ></nb-classification-banner>
     </div>

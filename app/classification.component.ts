@@ -18,6 +18,7 @@ export class ClassificationComponent implements OnInit{
   public canSetLevel: boolean = true;
   public environment: string = 'testing';
   public position: string = 'top';
+  public onLevelChanged: string;
   public acmObject: any = {
           "version": "2.1.0",
           "classif": "TS",

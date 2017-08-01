@@ -8,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
         [acmObject]="acmObject"
         [canSetLevel]="canSetLevel"
         [environment]="environment"
-        [onLevelChanged]="onLevelChanged"
+        (onLevelChanged)="onLevelChangedMethod($event)"
         [position]="position"
         ></nb-classification-banner>
+        <p>{{ outPutEventMessage }}</p>
     </div>
   `
 })
@@ -19,6 +20,7 @@ export class ClassificationComponent implements OnInit{
   public environment: string = 'testing';
   public position: string = 'top';
   public onLevelChanged: string;
+  public outPutEventMessage: string;
   public acmObject: any = {
           "version": "2.1.0",
           "classif": "TS",
@@ -65,5 +67,10 @@ export class ClassificationComponent implements OnInit{
 
   ngOnInit(): void {
     
+  }
+
+  onLevelChangedMethod(eventMessage: string) {
+    console.log(eventMessage);
+    this.outPutEventMessage = eventMessage;
   }
 }

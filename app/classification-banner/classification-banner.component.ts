@@ -11,7 +11,7 @@ export class ClassificationBannerComponent implements OnChanges {
     @Input() acmObject: any;
     @Input() canSetLevel: boolean;
     @Input() environment: string = 'dev'; // Set dev by default
-    @Input() onLevelChanged: string;
+    @Output() onLevelChanged: EventEmitter<string> = new EventEmitter<string>();
     @Input() position: string;
     backgroundColor: string = 'black';
 
@@ -29,5 +29,6 @@ export class ClassificationBannerComponent implements OnChanges {
 
     onClick(): void {
         // Something needs to happen
+        this.onLevelChanged.emit(`This is gonna emit this value ${this.acmObject.version} to the parent component`);
     }
 }
